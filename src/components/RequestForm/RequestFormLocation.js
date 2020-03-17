@@ -32,7 +32,7 @@ const RequestFormLocation = () => {
 
                 <label>
                     Inne
-                    <input name='machine' type='radio' value='inne'/>
+                    <input name='location' type='radio' value='inne'/>
                 </label>
                 <input type="text" id="text"/>
                 <button type="submit">Dalej</button>

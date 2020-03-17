@@ -33,7 +33,7 @@ const RequestFormVisitDetails = () => {
                     <option value="night">Noc: od 20:00 do 23:00 - usługa premium</option>
                 </select>
 
-                <button type="submit">Zgłoś zlecenie naprawy</button>
+                <button type="submit">Dalej</button>
             </form>
         </div>
     )

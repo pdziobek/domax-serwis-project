@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import RequestForm from '../../components/RequestForm/RequestForm'
 import {createPortal} from 'react-dom';
 import {useParams} from "react-router-dom";
@@ -11,6 +11,7 @@ export default function Modal() {
     const div  = document.createElement('div');
     const { step } = useParams();
 
+    const [order, setOrder] = useState({machine:''});
 
     useEffect(()=>{
         modalRoot.appendChild(div);
@@ -20,7 +21,7 @@ export default function Modal() {
 
 
     return createPortal(
-            <RequestForm/>,
+            <RequestForm setOrder={setOrder} />,
             div
     )
 }
