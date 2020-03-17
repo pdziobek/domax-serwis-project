@@ -1,10 +1,19 @@
 import React from "react";
+import {useHistory} from "react-router-dom";
 
 const RequestFormReason = () => {
+    const history = useHistory();
+    const validation = (e) => {
+        e.preventDefault();
+        //zapisz w serverze stan formularza
+        //redirwect
+        //przekieroqwanie
+        history.push("/repairvisit/4");
+    };
 
     return (
         <div>
-            <form>
+            <form onSubmit={validation}>
                 <label htmlFor="select issue">Wybierz lub opisz objawy:</label>
 
                 <div>
@@ -27,8 +36,12 @@ const RequestFormReason = () => {
                 </div>
 
                 <div>
-                    <label htmlFor="other issue">Inne:</label><br/>
-                        <textarea value="issue5" placeholder="Opisz krótko problem ze sprzętem"/>
+                    <label>
+                        Inne:
+                        <input name='issue' type='radio' value='inne'/>
+                    </label>
+                    <input type="text" id="text"/>
+                    <button type="submit">Dalej</button>
 
                 </div>
             </form>
@@ -40,4 +53,4 @@ const RequestFormReason = () => {
 
 
 
-export {RequestFormReason}
+export default RequestFormReason

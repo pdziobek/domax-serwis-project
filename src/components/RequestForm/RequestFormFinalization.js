@@ -11,4 +11,4 @@ const RequestFormFinalization = () => {
 
 };
 
-export {RequestFormFinalization}
+export default RequestFormFinalization

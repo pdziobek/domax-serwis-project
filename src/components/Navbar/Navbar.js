@@ -16,7 +16,7 @@ export default function Navbar() {
                     <li><Link to="/aboutus">o nas</Link></li>
                     <li><Link to="/ourwork">nasze realizacje</Link></li>
                     <li><Link to="/prices" >cennik</Link></li>
-                    <li><Link to="/repairvisit">umów naprawę</Link></li>
+                    <li><Link to="/repairvisit/1">umów naprawę</Link></li>
                 </ul>
             </nav>
         </header>

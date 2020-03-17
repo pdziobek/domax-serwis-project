@@ -1,10 +1,20 @@
 import React from 'react';
+import {useHistory} from "react-router-dom";
 
 const RequestFormVisitDetails = () => {
 
+    const history = useHistory();
+    const validation = (e) => {
+        e.preventDefault();
+        //zapisz w serverze stan formularza
+        //redirwect
+        //przekieroqwanie
+        history.push("/repairvisit/5");
+    };
+
     return (
         <div>
-            <form>
+            <form onSubmit={validation}>
                 <label htmlFor="name">Imię i nazwisko</label>
                 <input type="text" id/>
 
@@ -30,4 +40,4 @@ const RequestFormVisitDetails = () => {
 
 };
 
-export {RequestFormVisitDetails}
+export default RequestFormVisitDetails
