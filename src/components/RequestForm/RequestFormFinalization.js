@@ -2,20 +2,6 @@ import React from 'react';
 import {useHistory} from "react-router-dom";
 
 
-//ORDER:
-// inputAddress
-//
-// inputName
-//
-// inputNumber
-//
-// location:"okolice"
-// machine:"lodówka"
-// meetingTime:""
-//
-// reason : {issue2: true}
-
-
 const RequestFormFinalization = ({order}) => {
 
     const history = useHistory();
@@ -25,6 +11,23 @@ const RequestFormFinalization = ({order}) => {
         //redirwect
         //przekieroqwanie
         history.push("/");
+    };
+
+    const saveDataOnServer = (e) => {
+        fetch('http://localhost:4000/orders', {
+            method: "POST",
+            body: JSON.stringify(order),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.log(error);
+            });
     };
 
     const getLocationDescription = (location) => {
@@ -86,7 +89,9 @@ const RequestFormFinalization = ({order}) => {
             }
         }
         return 'jutro'
-    }
+    };
+
+
 
     return (
         <div>
@@ -107,7 +112,7 @@ const RequestFormFinalization = ({order}) => {
             <div>Adres wizyty serwisowej: <br/> {order.inputAddress}</div>
             <div>Numer kontaktowy: <br/> {order.inputNumber}</div>
             <div>Preferowany czas wizyty serwisowej: <br/> {getMeetingTime(order.meetingTime)}</div>
-            <button type="submit">Zgłoś zlecenie naprawy</button>
+            <button onClick={saveDataOnServer} type="submit">Zgłoś zlecenie naprawy</button>
         </div>
 
     )
@@ -115,9 +120,11 @@ const RequestFormFinalization = ({order}) => {
     return (
         <div>
         <p>Dziękujemy za zgłoszenie. Serwisant skontaktuje się w ciągu 24 godzin.</p>
-        <button onClick={validation}>Wróć na stronę główną serwisu</button>
+        <button >Wróć na stronę główną serwisu</button>
         </div>
     )
+
+
 
 };
 

@@ -1,0 +1,33 @@
+{
+  "orders": [
+    {
+      "machine": "lodówka",
+      "location": "okolice",
+      "reason": {
+        "issue3": true
+      },
+      "inputName": "rybka",
+      "inputAddress": "",
+      "inputNumber": "9",
+      "meetingTime": "noon",
+      "id": 1
+    },
+    {
+      "machine": "pralka",
+      "location": "NT",
+      "reason": {
+        "issue3": true,
+        "issue2": true,
+        "issue1": true,
+        "issue4": true,
+        "inne": true,
+        "otherReason": "czajnik"
+      },
+      "inputName": "",
+      "inputAddress": "",
+      "inputNumber": "",
+      "meetingTime": "",
+      "id": 2
+    }
+  ]
+}
