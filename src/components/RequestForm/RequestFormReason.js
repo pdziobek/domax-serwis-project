@@ -1,13 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 
-const RequestFormReason = () => {
+const RequestFormReason = ({order, setOrder}) => {
+
+    const [reason, setReason] = useState({});
+    const [otherReason, setOtherReason] = useState('');
+
+    const reasonOnChange = ({target:{name, checked}}) => {
+        setReason(prev => ({...prev,  [name] : checked}) )
+    };
+
+    const otherReasonOnChange = (e) => {
+        setOtherReason(e.target.value);
+    };
+
     const history = useHistory();
     const validation = (e) => {
         e.preventDefault();
         //zapisz w serverze stan formularza
         //redirwect
         //przekieroqwanie
+
+
+        //wszystkie wybrane checkboxy zapisane w stanie
+        //robię kopię
+        const reasonMapped = {...reason};
+        //jeżeli wybrana opcja inne powody
+        if (reason.inne){
+            //dodaję nowy klucz z wartością wpisaną w text input otherReason
+            reasonMapped.otherReason = otherReason
+        }
+
+
+        setOrder(prev => ({...prev, reason: reasonMapped }) );
         history.push("/repairvisit/4");
     };
 
@@ -19,28 +44,28 @@ const RequestFormReason = () => {
                 <div>
 
                     <label>
-                        <input type="checkbox" name="issue" value="issue1"/>nie włącza się;
+                        <input checked={reason.issue1} onChange={reasonOnChange} type="checkbox" name="issue1" value="issue1"/>nie włącza się;
                     </label><br/>
 
                     <label>
-                        <input type="checkbox" name="issue" value="issue2"/>hałasuje;
+                        <input checked={reason.issue2} onChange={reasonOnChange} type="checkbox" name="issue2" value="issue2"/>hałasuje;
                     </label><br/>
 
                     <label>
-                        <input type="checkbox" name="issue" value="issue3"/>włącza się ale nie reaguje;
+                        <input checked={reason.issue3} onChange={reasonOnChange} type="checkbox" name="issue3" value="issue3"/>włącza się ale nie reaguje;
                     </label><br/>
 
                     <label>
-                        <input type="checkbox" name="issue" value="issue4"/>wyświetlacz nie włącza się;
+                        <input checked={reason.issue4} onChange={reasonOnChange} type="checkbox" name="issue4" value="issue4"/>wyświetlacz nie włącza się;
                     </label><br/>
                 </div>
 
                 <div>
                     <label>
-                        Inne:
-                        <input name='issue' type='radio' value='inne'/>
+                        <input checked={reason.inne} onChange={reasonOnChange} type='checkbox' name='inne' value='inne'/>Inne:
                     </label>
-                    <input type="text" id="text"/>
+                    {reason.inne &&
+                    <input value={otherReason} onChange={otherReasonOnChange} type="text" id="text"/>}
                     <button type="submit">Dalej</button>
 
                 </div>
