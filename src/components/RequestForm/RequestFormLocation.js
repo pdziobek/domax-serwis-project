@@ -21,7 +21,18 @@ const RequestFormLocation = ({order, setOrder}) => {
         //zapisz w serverze stan formularza
         //redirwect
         //przekieroqwanie
-        setOrder( prev => ({...prev, location: location}) );
+
+
+        //wszystkie wybrane checkboxy zapisane w stanie
+        //robię kopię
+        let locationMapped =  location;
+        //jeżeli wybrana opcja inne powody
+        if (location === 'inne'){
+            //dodaję nowy klucz z wartością wpisaną w text input otherReason
+            locationMapped = otherLocation
+        }
+
+        setOrder( prev => ({...prev, location: locationMapped}) );
         history.push("/repairvisit/3");
     };
 
@@ -47,7 +58,7 @@ const RequestFormLocation = ({order, setOrder}) => {
                     Inne
                     <input checked={location === "inne"} onChange={locationOnChange} name='location' type='radio' value='inne'/>
                 </label>
-                {location === "inne" &&
+                {location === 'inne' &&
                 <input value={otherLocation} onChange={otherLocationOnChange} type="text" id="text"/>}
                 <button type="submit">Dalej</button>
 

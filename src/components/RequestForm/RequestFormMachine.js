@@ -22,7 +22,15 @@ const RequestFormMachine = ({order, setOrder}) => {
         //zapisz w serverze stan formularza
         //redirect
         //przekieroqwanie
-        setOrder( prev => ({...prev,  machine: machine }) );
+
+
+        let machineMapped = machine;
+        if(machine === 'inne'){
+            machineMapped = otherMachine
+        }
+
+
+        setOrder( prev => ({...prev,  machine: machineMapped }) );
         history.push("/repairvisit/2/");
     };
 
