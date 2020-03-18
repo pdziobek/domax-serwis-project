@@ -11,7 +11,7 @@ export default function Modal() {
     const div  = document.createElement('div');
     const { step } = useParams();
 
-    const [order, setOrder] = useState({machine:'', location:'', reason:''});
+    const [order, setOrder] = useState({machine:'', location:'', reason:'', inputName:'', inputAddress:'', inputNumber:'', meetingTime:''});
 
     useEffect(()=>{
         modalRoot.appendChild(div);
@@ -21,7 +21,7 @@ export default function Modal() {
 
 
     return createPortal(
-            <RequestForm setOrder={setOrder} />,
+            <RequestForm setOrder={setOrder} order={order} />,
             div
     )
 }

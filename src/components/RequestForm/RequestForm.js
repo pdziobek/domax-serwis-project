@@ -13,7 +13,7 @@ const forms = [ (props) =>  <RequestFormMachine {...props}/>, (props) => <Locati
 
 const optimizeStep = (step) => Math.max( 0,  Math.min( step, forms.length - 1 ));
 
-const RequestForm = ({setOrder}) => {
+const RequestForm = ({setOrder, order}) => {
     const { step } = useParams();
 
 
@@ -31,7 +31,7 @@ const RequestForm = ({setOrder}) => {
 
     return (<div onClick={()=>{history.push("/")}} className='portal'>
         <div onClick={e => e.stopPropagation()} className='modal'>
-            {forms[optimizeStep(step - 1)]( { setOrder}  )}
+            {forms[optimizeStep(step - 1)]( { setOrder, order}  )}
         </div>
     </div>)
 
