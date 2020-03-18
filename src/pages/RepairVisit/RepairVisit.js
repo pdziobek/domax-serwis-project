@@ -11,7 +11,7 @@ export default function Modal() {
     const div  = document.createElement('div');
     const { step } = useParams();
 
-    const [order, setOrder] = useState({machine:''});
+    const [order, setOrder] = useState({machine:'', location:''});
 
     useEffect(()=>{
         modalRoot.appendChild(div);

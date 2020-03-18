@@ -1,7 +1,19 @@
-import React from "react";
+import React, {useState}from "react";
 import {useHistory} from "react-router-dom";
 
-const RequestFormLocation = () => {
+const RequestFormLocation = ({order, setOrder}) => {
+
+    const [location, setLocation] = useState('NT');
+    const [otherLocation, setOtherLocation] = useState('');
+
+    const locationOnChange = (e) => {
+        setLocation(e.target.value);
+
+    };
+
+    const otherLocationOnChange = (e) => {
+        setOtherLocation(e.target.value);
+    };
 
     const history = useHistory();
     const validation = (e) => {
@@ -9,6 +21,7 @@ const RequestFormLocation = () => {
         //zapisz w serverze stan formularza
         //redirwect
         //przekieroqwanie
+        setOrder( prev => ({...prev, location: location}) );
         history.push("/repairvisit/3");
     };
 
@@ -18,23 +31,24 @@ const RequestFormLocation = () => {
                 <label htmlFor="select location">Wybierz miejsce naprawy</label>
                 <label>
                      Nowy Targ
-                    <input name='location' type='radio' value='Nowy Targ'/>
+                    <input checked={location === "NT"} onChange={locationOnChange} name='location' type='radio' value='NT'/>
                 </label>
 
                 <label>
                     Zakopane
-                    <input name='location' type='radio' value='Zakopane'/>
+                    <input checked={location === "zakopane"} onChange={locationOnChange} name='location' type='radio' value='zakopane'/>
                 </label>
                 <label>
                     Okolice
-                    <input name='location' type='radio' value='Okolice'/>
+                    <input checked={location === "okolice"} onChange={locationOnChange} name='location' type='radio' value='okolice'/>
                 </label>
 
                 <label>
                     Inne
-                    <input name='location' type='radio' value='inne'/>
+                    <input checked={location === "inne"} onChange={locationOnChange} name='location' type='radio' value='inne'/>
                 </label>
-                <input type="text" id="text"/>
+                {location === "inne" &&
+                <input value={otherLocation} onChange={otherLocationOnChange} type="text" id="text"/>}
                 <button type="submit">Dalej</button>
 
             </form>

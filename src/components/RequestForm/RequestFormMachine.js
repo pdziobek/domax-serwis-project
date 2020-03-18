@@ -66,3 +66,12 @@ const RequestFormMachine = ({order, setOrder}) => {
 
 
 export default RequestFormMachine;
+
+
+// {machine === 'inne' ?
+// <input value={otherMachine} onChange={otherMachineOnChange} type="text" id="text"/>
+//
+// :
+//null
+// }
+// <button type="submit">Dalej</button>
