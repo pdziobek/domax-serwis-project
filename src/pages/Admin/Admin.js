@@ -6,11 +6,15 @@ import Order from "../../components/Order/Order";
 const Admin = () => {
 
     const [orders, setOrders] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+
+
 
     const fetchAllOrders = () => {
+        setIsLoading(true)
         fetch('http://localhost:4000/orders')
             .then((res) => res.json())
-            .then(res => {setOrders(res)})
+            .then(res => {setOrders(res); setIsLoading(false) })
     }
 
     useEffect(() => {
@@ -27,8 +31,12 @@ const Admin = () => {
 
 
 
-    if(!orders.length){
+    if(isLoading){
       return 'Loading...'
+    }
+
+    if(!orders.length ){
+        return 'Brak zgłoszeń'
     }
 
     //przekazujemy do Order w props handleDeleteOrder ( funkcja do usuniecia order )

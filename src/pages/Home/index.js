@@ -3,6 +3,7 @@ import Button from '../../components/button';
 import './style.scss';
 import Navbar from "../../components/Navbar/Navbar";
 import RightSide from "../../components/RightSide/RightSide";
+import {Link} from "react-router-dom";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
               </p>
 
 
-              <button>UMÓW SIĘ NA NAPRAWĘ</button>
+              <button><Link to="/repairvisit/1">UMÓW SIĘ NA NAPRAWĘ</Link></button>
           </section>
   );
 }

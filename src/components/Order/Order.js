@@ -8,7 +8,6 @@ const Order = ({order, handleDeleteOrder }) => {
     //dodajemy onClick ktory przekaze ID pobrane z order.id
     return (
         <div>
-            {/*<button onClick={}>DELETE</button>*/}
             <div>Urządzenie do naprawy: <br/> {getMachineDescription( order.machine)}</div>
             <div>Miejscowość: <br/> {getLocationDescription( order.location)}</div>
             <div>Problem/y z urządzeniem:</div>
@@ -25,6 +24,7 @@ const Order = ({order, handleDeleteOrder }) => {
             <div>Adres wizyty serwisowej: <br/> {order.inputAddress}</div>
             <div>Numer kontaktowy: <br/> {order.inputNumber}</div>
             <div>Preferowany czas wizyty serwisowej: <br/> {getMeetingTime(order.meetingTime)}</div>
+            <button onClick={() => handleDeleteOrder(order.id)}>DELETE</button>
         </div>
     )
 };
