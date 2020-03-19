@@ -40,8 +40,9 @@ const Admin = () => {
     }
 
     //przekazujemy do Order w props handleDeleteOrder ( funkcja do usuniecia order )
+    debugger;
 
-    return orders.map((order)=>  <Order key={order.id} order={order}  handleDeleteOrder={handleDeleteOrder}/> )
+    return orders.map((order)=>  <Order name="Paula" key={order.id} showDeleteBtn order={order}  handleDeleteOrder={handleDeleteOrder}/> )
 
 
 

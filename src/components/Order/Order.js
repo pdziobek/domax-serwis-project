@@ -2,10 +2,20 @@ import React from 'react'
 import { getLocationDescription, getMachineDescription, getMeetingTime } from '../common/utils'
 
 //wyciagamy handleDeleteOrder z propsow
-const Order = ({order, handleDeleteOrder }) => {
+// const Order = ( {order, handleDeleteOrder, showDeleteBtn } ) => {
+const Order = (  props ) => {
+    // 1.
+    const {order, handleDeleteOrder, showDeleteBtn } = props;
+
+    //2.
+    // const order = props.order;
+    // const handleDeleteOrder = props.order;
+    // const showDeleteBtn = props.showDeleteBtn;
 
     //dodajemy guzik do usuniecia zamowienia
+
     //dodajemy onClick ktory przekaze ID pobrane z order.id
+    debugger;
     return (
         <div>
             <div>Urządzenie do naprawy: <br/> {getMachineDescription( order.machine)}</div>
@@ -24,7 +34,9 @@ const Order = ({order, handleDeleteOrder }) => {
             <div>Adres wizyty serwisowej: <br/> {order.inputAddress}</div>
             <div>Numer kontaktowy: <br/> {order.inputNumber}</div>
             <div>Preferowany czas wizyty serwisowej: <br/> {getMeetingTime(order.meetingTime)}</div>
-            <button onClick={() => handleDeleteOrder(order.id)}>DELETE</button>
+
+
+            {  showDeleteBtn &&  <button onClick={() => handleDeleteOrder(order.id)}>DELETE</button> }
         </div>
     )
 };
