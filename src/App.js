@@ -18,6 +18,7 @@ import Navbar from "./components/Navbar/Navbar";
 import RightSide from "./components/RightSide/RightSide";
 import LeftSide from "./components/LeftSide/LeftSide";
 import './style.scss';
+import Admin from "./pages/Admin/Admin";
 // ROUTER
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
                       <Route exact path='/ourwork' component={OurWork} />
                       <Route exact path='/prices' component={Prices} />
                       <Route path='/repairvisit/:step' component={RepairVisit} />
+                      <Route path='/admin' component={Admin}/>
                 </Switch>
               </div>
           </RightSide>

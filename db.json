@@ -28,6 +28,38 @@
       "inputNumber": "",
       "meetingTime": "",
       "id": 2
+    },
+    {
+      "machine": "pralka",
+      "location": "NT",
+      "reason": {
+        "issue2": true,
+        "issue4": true,
+        "inne": true,
+        "otherReason": "wariuje"
+      },
+      "inputName": "rybka",
+      "inputAddress": "czajnik",
+      "inputNumber": "4567",
+      "meetingTime": "evening",
+      "id": 3
+    },
+    {
+      "machine": "zmywarka",
+      "location": "okolice",
+      "reason": {
+        "issue2": true,
+        "issue3": true,
+        "issue4": true,
+        "issue1": true,
+        "inne": true,
+        "otherReason": "dggg"
+      },
+      "inputName": "",
+      "inputAddress": "",
+      "inputNumber": "",
+      "meetingTime": "",
+      "id": 4
     }
   ]
 }
