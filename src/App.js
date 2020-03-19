@@ -19,6 +19,7 @@ import RightSide from "./components/RightSide/RightSide";
 import LeftSide from "./components/LeftSide/LeftSide";
 import './style.scss';
 import Admin from "./pages/Admin/Admin";
+//stylowanie
 // ROUTER
 
 function App() {
