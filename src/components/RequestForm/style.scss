@@ -11,9 +11,38 @@
   .modal{
     width: 50%;
     margin: 20% auto;
-    background: white;
-    border-radius: 8px;
-    padding: 2rem 1rem;
-    border: 1px solid black;
+    background: #bd9669;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    -webkit-box-shadow: 4px 1px 11px 18px rgba(189,150,105,1);
+    -moz-box-shadow: 4px 1px 11px 18px rgba(189,150,105,1);
+    box-shadow: 4px 1px 11px 18px rgba(189,150,105,1);
+    h2{
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    button{
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
   }
 };
+
+.next-btn {
+  background-color: #330a05;
+  color: #bd9669;
+  border-radius: 10px;
+  padding: 5px;
+  border-color: #330a05;
+  text-decoration: none
+
+}
+
+form{
+  label, button{
+    display: block;
+  }
+}

@@ -36,6 +36,8 @@ const RequestFormVisitDetails = ({order, setOrder}) => {
     return (
         <div>
             <form onSubmit={validation}>
+                <h2>Dane kontaktowe</h2>
+
                 <label htmlFor="name">Imię i nazwisko</label>
                 <input value={inputName} onChange={inputNameOnChange} type="text" id="text"/>
 
@@ -58,7 +60,7 @@ const RequestFormVisitDetails = ({order, setOrder}) => {
                 </select>
 
 
-                <button type="submit">Dalej</button>
+                <button className='next-btn' type="submit">Dalej</button>
             </form>
         </div>
     )

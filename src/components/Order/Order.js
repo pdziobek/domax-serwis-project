@@ -1,5 +1,6 @@
 import React from 'react'
 import { getLocationDescription, getMachineDescription, getMeetingTime } from '../common/utils'
+import './style.scss'
 
 //wyciagamy handleDeleteOrder z propsow
 // const Order = ( {order, handleDeleteOrder, showDeleteBtn } ) => {
@@ -16,9 +17,9 @@ const Order = (  props ) => {
 
     //dodajemy onClick ktory przekaze ID pobrane z order.id
     return (
-        <div>
-            <div>Urządzenie do naprawy: <br/> {getMachineDescription( order.machine)}</div>
-            <div>Miejscowość: <br/> {getLocationDescription( order.location)}</div>
+        <div className='order'>
+            <div>Urządzenie do naprawy:   {getMachineDescription( order.machine)}</div>
+            <div>Miejscowość:    {getLocationDescription( order.location)}</div>
             <div>Problem/y z urządzeniem:</div>
             <ul>
                 { order.reason.issue1 && <li>Nie włącza się</li>}
@@ -29,13 +30,13 @@ const Order = (  props ) => {
             </ul>
 
 
-            <div>Imię i nazwisko zgłaszającego: <br/> {order.inputName}</div>
-            <div>Adres wizyty serwisowej: <br/> {order.inputAddress}</div>
-            <div>Numer kontaktowy: <br/> {order.inputNumber}</div>
+            <div>Imię i nazwisko zgłaszającego:    {order.inputName}</div>
+            <div>Adres wizyty serwisowej:    {order.inputAddress}</div>
+            <div>Numer kontaktowy:    {order.inputNumber}</div>
             <div>Preferowany czas wizyty serwisowej: <br/> {getMeetingTime(order.meetingTime)}</div>
 
 
-            {  showDeleteBtn &&  <button onClick={() => handleDeleteOrder(order.id)}>DELETE</button> }
+            {  showDeleteBtn &&  <button className='btn-dlt-admin' onClick={() => handleDeleteOrder(order.id)}>DELETE</button> }
         </div>
     )
 };

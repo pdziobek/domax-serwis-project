@@ -39,7 +39,7 @@ const RequestFormReason = ({order, setOrder}) => {
     return (
         <div>
             <form onSubmit={validation}>
-                <label htmlFor="select issue">Wybierz lub opisz objawy:</label>
+                <h2>Wybierz lub opisz objawy:</h2>
 
                 <div>
 
@@ -66,7 +66,7 @@ const RequestFormReason = ({order, setOrder}) => {
                     </label>
                     {reason.inne &&
                     <input value={otherReason} onChange={otherReasonOnChange} type="text" id="text"/>}
-                    <button type="submit">Dalej</button>
+                    <button className='next-btn' type="submit">Dalej</button>
 
                 </div>
             </form>

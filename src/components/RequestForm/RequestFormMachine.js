@@ -37,7 +37,7 @@ const RequestFormMachine = ({order, setOrder}) => {
     return (
         <div>
             <form onSubmit={validation}>
-                <label htmlFor="select machine">Wybierz rodzaj sprzętu do naprawy</label>
+                <h2>Wybierz rodzaj sprzętu do naprawy</h2>
                 <label>
                     Pralka
                     <input checked={machine === "pralka"}
@@ -65,7 +65,7 @@ const RequestFormMachine = ({order, setOrder}) => {
                 </label>
                 {machine === 'inne' &&
                 <input value={otherMachine} onChange={otherMachineOnChange} type="text" id="text"/>}
-                <button type="submit">Dalej</button>
+                <button className='next-btn' type="submit">Dalej</button>
             </form>
         </div>
     )

@@ -39,28 +39,28 @@ const RequestFormLocation = ({order, setOrder}) => {
     return (
         <div>
             <form onSubmit={validation}>
-                <label htmlFor="select location">Wybierz miejsce naprawy</label>
+                <h2>Wybierz miejsce naprawy</h2>
                 <label>
-                     Nowy Targ
                     <input checked={location === "NT"} onChange={locationOnChange} name='location' type='radio' value='NT'/>
+                    Nowy Targ
                 </label>
 
                 <label>
-                    Zakopane
                     <input checked={location === "zakopane"} onChange={locationOnChange} name='location' type='radio' value='zakopane'/>
+                    Zakopane
                 </label>
                 <label>
-                    Okolice
                     <input checked={location === "okolice"} onChange={locationOnChange} name='location' type='radio' value='okolice'/>
+                    Okolice
                 </label>
 
                 <label>
-                    Inne
                     <input checked={location === "inne"} onChange={locationOnChange} name='location' type='radio' value='inne'/>
+                    Inne
                 </label>
                 {location === 'inne' &&
                 <input value={otherLocation} onChange={otherLocationOnChange} type="text" id="text"/>}
-                <button type="submit">Dalej</button>
+                <button className='next-btn' type="submit">Dalej</button>
 
             </form>
         </div>
