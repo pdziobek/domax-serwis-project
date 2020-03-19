@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useHistory} from "react-router-dom";
 import Order from "../Order/Order";
-
+import DataConfirmation from "./DataConfirmation";
 
 const RequestFormFinalization = ({order}) => {
+
+    const [showConfirmation, setShowConfirmation] = useState(false);
+
+
 
     const history = useHistory();
     const validation = (e) => {
@@ -25,28 +29,27 @@ const RequestFormFinalization = ({order}) => {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
+                setShowConfirmation( true )
             })
             .catch(error => {
                 console.log(error);
             });
+
+
     };
 
+    if (showConfirmation) {
+        return <DataConfirmation/>
+    }
 
     //stworzyc komponent Order ktory dostaje w propsach order,
     return (
         <div>
             <h2>Podsumowanie zgloszenia:</h2>
             <Order  order={order}/>
-            <button onClick={saveDataOnServer} type="submit">Zgłoś zlecenie naprawy</button>
+            <button onClick={saveDataOnServer}  type="submit">Zgłoś zlecenie naprawy</button>
         </div>
 
-    )
-
-    return (
-        <div>
-        <p>Dziękujemy za zgłoszenie. Serwisant skontaktuje się w ciągu 24 godzin.</p>
-        <button >Wróć na stronę główną serwisu</button>
-        </div>
     )
 
 

@@ -15,7 +15,6 @@ const Order = (  props ) => {
     //dodajemy guzik do usuniecia zamowienia
 
     //dodajemy onClick ktory przekaze ID pobrane z order.id
-    debugger;
     return (
         <div>
             <div>Urządzenie do naprawy: <br/> {getMachineDescription( order.machine)}</div>

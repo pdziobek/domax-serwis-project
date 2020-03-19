@@ -22,7 +22,6 @@ import Admin from "./pages/Admin/Admin";
 // ROUTER
 
 function App() {
-    debugger;
   return (
       <BrowserRouter>
           <div className='container'>
