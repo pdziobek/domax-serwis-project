@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react'
+import Order from "../../components/Order/Order";
 
 
 const Admin = () => {
@@ -21,7 +22,7 @@ const Admin = () => {
       return 'Loading...'
     }
 
-    return orders.map((order)=> <p>{order.machine}</p> )
+    return orders.map((order)=>  <Order  order={order}/> )
 
 };
 

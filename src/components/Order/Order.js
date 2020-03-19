@@ -1,11 +1,11 @@
 import React from 'react'
 import { getLocationDescription, getMachineDescription, getMeetingTime } from '../common/utils'
 
-const Order = (order) => {
 
+
+const Order = ({order}) => {
     return (
         <div>
-            <h2>Podsumowanie zgloszenia:</h2>
             <div>Urządzenie do naprawy: <br/> {getMachineDescription( order.machine)}</div>
             <div>Miejscowość: <br/> {getLocationDescription( order.location)}</div>
             <div>Problem/y z urządzeniem:</div>
@@ -24,6 +24,6 @@ const Order = (order) => {
             <div>Preferowany czas wizyty serwisowej: <br/> {getMeetingTime(order.meetingTime)}</div>
         </div>
     )
-}
+};
 
 export default Order;
