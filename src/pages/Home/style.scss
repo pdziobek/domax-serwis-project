@@ -1,7 +1,27 @@
-button{
-    padding: 0.5rem 1rem;
-    background: none;
-    border-radius: 0.5rem;
-    color: tomato;
-    border-color: currentColor;
+.heading {
+    color: #330a05;
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+.main-text {
+    color: #330a05;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: #330a05;
+    border-radius: 30px;
+    border-color: #330a05;
+    padding: 30px;
+    margin-top: 20px;
+
+    .btn-text {
+        color: #bd9669;
+        text-decoration: none;
+        font-size: 2em;
+        font-weight: bolder;
+    }
 }

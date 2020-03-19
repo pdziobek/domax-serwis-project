@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import Order from "../../components/Order/Order";
 
-
 const Admin = () => {
 
     const [orders, setOrders] = useState([]);
