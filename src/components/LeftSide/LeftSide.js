@@ -11,7 +11,6 @@ export default function LeftSide() {
     return (
         <div className="left-side">
             <img className="logo" src={logo} alt='logo'/>
-
         </div>
     );
 }

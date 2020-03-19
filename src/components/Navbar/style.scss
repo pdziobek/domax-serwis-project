@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: space-between;
+
+  li {
+    list-style: none;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.25em;
+      font-weight: bolder;
+      color: #330a05;
+      padding: 5px 20px 5px 20px;
+
+    }
+    a:hover {
+      background-color: #330a05;
+      color: #bd9669;
+
+    }
+  }
+}
