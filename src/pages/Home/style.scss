@@ -1,14 +1,40 @@
-.heading {
-    color: #C5BEB4;
-    font-size: 3em;
-    margin-top: 50px;
-}
-
 .main-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     color: #FFFFFF;
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 50px;
+
+    .heading {
+        color: #C5BEB4;
+        font-size: 1em;
+        margin-top: 50px;
+        font-weight: normal;
+        letter-spacing: 1mm;
+}
+
+    .slogan{
+        margin: 1em;
+        font-size: 1.5em;
+
+
+    }
+
+    .introduction{
+        font-size: 0.7em;
+        font-weight: normal;
+    }
+
+    .main-image {
+        width: 90%;
+        z-index: 99;
+    }
+
+
+
 }
 
 .btn {

@@ -4,26 +4,25 @@ import './style.scss';
 import Navbar from "../../components/Navbar/Navbar";
 import MainContent from "../../components/MainContent/MainContent";
 import {Link} from "react-router-dom";
+import mainImage from '../../images/backgroung800.jpg';
 
 export default function Home() {
   return (
 
-          <section>
-              <h1 className='heading'> Autoryzowany serwis AGD od 15 lat na podhalu </h1>
-              <p className='main-text'>
-                  Dobrze wiemy na czym bazują producenci naszych sprzętów - chcą żebyśmy kupowali nowy, jak najczęściej.
-                  Najbardziej oczywistym sposobem postarzenia produktu jest używanie komponentów,
-                  które powodują szybkie uszkodzenie sprzętu lub stosowanie słabej jakości materiałów.
+          <section className='main-text'>
+              <h1 className='heading'> TWÓJ SERWIS SPRZĘTU AGD</h1>
+              <p className='slogan'>
+                  Naprawiamy Tak<br/> Jak We Własnym Domu.
               </p >
-              <p className='main-text'>
-                  Nie wydawaj pieniędzy w błoto, co dwa lata na nową pralkę/lodówkę/ zmywarkę.
+              <p className='introduction'>
+                  Od 2005 roku, najlepszy serwis urządzeń domowych, najdłużej działający na Podhalu.
               </p>
-              <p className='main-text'>
-                  Naprawimy je dla Ciebie!
-              </p>
+              <img src={mainImage} className='main-image'/>
 
 
-              <button className='btn'><Link className='btn-text' to="/repairvisit/1">UMÓW SIĘ NA NAPRAWĘ</Link></button>
+
+
+              {/*<button className='btn'><Link className='btn-text' to="/repairvisit/1">UMÓW SIĘ NA NAPRAWĘ</Link></button>*/}
           </section>
   );
 }
