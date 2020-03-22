@@ -3,9 +3,9 @@ import './style.scss';
 
 
 
-export default function RightSide({children}) {
+export default function MainContent({children}) {
     return (
-        <div className='right-side'>
+        <div className='main-content'>
             {children}
         </div>
     );

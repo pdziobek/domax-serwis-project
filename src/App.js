@@ -15,7 +15,7 @@ import OurWork from "./pages/OurWork/OurWork";
 import Prices from "./pages/Prices/Prices";
 import RepairVisit from "./pages/RepairVisit/RepairVisit";
 import Navbar from "./components/Navbar/Navbar";
-import RightSide from "./components/RightSide/RightSide";
+import MainContent from "./components/MainContent/MainContent";
 import './style.scss';
 import Admin from "./pages/Admin/Admin";
 //stylowanie
@@ -25,7 +25,7 @@ function App() {
   return (
       <BrowserRouter>
           <div className='container'>
-          <RightSide>
+          <MainContent>
               <div>
                 <Navbar/>
                 <Switch>
@@ -37,7 +37,7 @@ function App() {
                       <Route path='/admin' component={Admin}/>
                 </Switch>
               </div>
-          </RightSide>
+          </MainContent>
           </div>
       </BrowserRouter>
   );

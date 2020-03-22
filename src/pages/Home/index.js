@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../../components/button';
 import './style.scss';
 import Navbar from "../../components/Navbar/Navbar";
-import RightSide from "../../components/RightSide/RightSide";
+import MainContent from "../../components/MainContent/MainContent";
 import {Link} from "react-router-dom";
 
 export default function Home() {
