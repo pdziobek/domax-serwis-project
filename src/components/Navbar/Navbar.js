@@ -6,11 +6,13 @@ import OurWork from "../../pages/OurWork/OurWork";
 import Prices from "../../pages/Prices/Prices";
 import RepairVisit from "../../pages/RepairVisit/RepairVisit";
 import './style.scss';
+import logo from '../../images/logowhite.png';
 
 
 export default function Navbar() {
     return (
-        <header>
+        <header className='top-bar'>
+            <img src={logo} className='logo'/>
             <nav>
                 <ul className='nav-list'>
                     <li><Link to="/">home</Link></li>

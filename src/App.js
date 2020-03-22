@@ -7,7 +7,7 @@ import {
     Switch,
     NavLink, BrowserRouter,
 } from 'react-router-dom';
-import logo from './logo.svg';
+import './images/logowhite.png';
 import './App.css';
 import Home from './pages/Home';
 import AboutUs from "./pages/AboutUs/AboutUs";
