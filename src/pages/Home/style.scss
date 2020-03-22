@@ -29,6 +29,7 @@
     }
 
     .main-image {
+        margin: 50px;
         width: 90%;
         z-index: 99;
     }
@@ -36,6 +37,13 @@
 
 
 }
+
+.main-machines {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .btn {
     background-color: #330a05;

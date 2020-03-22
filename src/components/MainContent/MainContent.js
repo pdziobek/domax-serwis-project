@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import MainMachines from "./MainMachines";
 
 
 
@@ -9,7 +10,8 @@ export default function MainContent({children}) {
             <div className='main-content'>
                 {children}
             </div>
-            <div className='main-machines'></div>
+            <MainMachines/>
+
         </div>
 
     );
