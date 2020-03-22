@@ -16,7 +16,6 @@ import Prices from "./pages/Prices/Prices";
 import RepairVisit from "./pages/RepairVisit/RepairVisit";
 import Navbar from "./components/Navbar/Navbar";
 import RightSide from "./components/RightSide/RightSide";
-import LeftSide from "./components/LeftSide/LeftSide";
 import './style.scss';
 import Admin from "./pages/Admin/Admin";
 //stylowanie
@@ -26,7 +25,6 @@ function App() {
   return (
       <BrowserRouter>
           <div className='container'>
-          <LeftSide/>
           <RightSide>
               <div>
                 <Navbar/>
