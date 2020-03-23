@@ -22,10 +22,6 @@ export default function Home() {
 
 
 
-              {/*<button className='btn'><Link className='btn-text' to="/repairvisit/1">UMÓW SIĘ NA NAPRAWĘ</Link></button>*/}
-
-
-
         </div>
   );
 }

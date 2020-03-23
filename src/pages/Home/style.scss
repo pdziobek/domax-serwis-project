@@ -28,34 +28,46 @@
         font-weight: normal;
     }
 
-    .main-image {
-        margin: 50px;
-        width: 90%;
-        z-index: 99;
-    }
 
+        .main-image {
+            max-width: 80%;
+            width: 100%;
+            height: auto;
+            margin: 30px;
+            z-index: 99;
+        }
 
 
 }
 
-.main-machines {
+.about-us {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
 
 .btn {
-    background-color: #330a05;
-    border-radius: 30px;
-    border-color: #330a05;
-    padding: 30px;
-    margin-top: 20px;
+    border: 1px #FFFFFF solid;
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 40px;
+    width: 40%;
 
     .btn-text {
-        color: #bd9669;
+        color: #FFFFFF;
         text-decoration: none;
         font-size: 2em;
         font-weight: bolder;
     }
+}
+
+
+.btn:hover {
+    border: 1px #C5BEB4 solid;
+
+
+
+
 }
