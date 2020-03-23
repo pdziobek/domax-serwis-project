@@ -36,7 +36,8 @@ const RequestFormVisitDetails = ({order, setOrder}) => {
     return (
         <div>
             <form onSubmit={validation}>
-                <h2>Dane kontaktowe</h2>
+                <fieldset>
+                <legend>Dane kontaktowe</legend>
 
                 <label htmlFor="name">Imię i nazwisko</label>
                 <input value={inputName} onChange={inputNameOnChange} type="text" id="text"/>
@@ -61,6 +62,7 @@ const RequestFormVisitDetails = ({order, setOrder}) => {
 
 
                 <button className='next-btn' type="submit">Dalej</button>
+                    </fieldset>
             </form>
         </div>
     )

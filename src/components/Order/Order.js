@@ -17,7 +17,7 @@ const Order = (  props ) => {
 
     //dodajemy onClick ktory przekaze ID pobrane z order.id
     return (
-        <div className='order'>
+        <fieldset className='order'>
             <div>Urządzenie do naprawy:   {getMachineDescription( order.machine)}</div>
             <div>Miejscowość:    {getLocationDescription( order.location)}</div>
             <div>Problem/y z urządzeniem:</div>
@@ -37,7 +37,7 @@ const Order = (  props ) => {
 
 
             {  showDeleteBtn &&  <button className='btn-dlt-admin' onClick={() => handleDeleteOrder(order.id)}>DELETE</button> }
-        </div>
+        </fieldset>
     )
 };
 

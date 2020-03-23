@@ -39,7 +39,8 @@ const RequestFormLocation = ({order, setOrder}) => {
     return (
         <div>
             <form onSubmit={validation}>
-                <h2>Wybierz miejsce naprawy</h2>
+                <fieldset>
+                <legend>Wybierz miejsce naprawy</legend>
                 <label>
                     <input checked={location === "NT"} onChange={locationOnChange} name='location' type='radio' value='NT'/>
                     Nowy Targ
@@ -61,7 +62,7 @@ const RequestFormLocation = ({order, setOrder}) => {
                 {location === 'inne' &&
                 <input value={otherLocation} onChange={otherLocationOnChange} type="text" id="text"/>}
                 <button className='next-btn' type="submit">Dalej</button>
-
+                    </fieldset>
             </form>
         </div>
     )

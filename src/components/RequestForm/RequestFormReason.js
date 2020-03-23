@@ -39,7 +39,8 @@ const RequestFormReason = ({order, setOrder}) => {
     return (
         <div>
             <form onSubmit={validation}>
-                <h2>Wybierz lub opisz objawy:</h2>
+                <fieldset>
+                <legend>Wybierz lub opisz objawy:</legend>
 
                 <div>
 
@@ -69,6 +70,7 @@ const RequestFormReason = ({order, setOrder}) => {
                     <button className='next-btn' type="submit">Dalej</button>
 
                 </div>
+                    </fieldset>
             </form>
         </div>
 

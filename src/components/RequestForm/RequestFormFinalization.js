@@ -45,9 +45,11 @@ const RequestFormFinalization = ({order}) => {
     //stworzyc komponent Order ktory dostaje w propsach order,
     return (
         <div>
-            <h2>Podsumowanie zgloszenia:</h2>
+            <fieldset>
+            <legend>Podsumowanie zgloszenia:</legend>
             <Order  order={order}/>
             <button className='next-btn' onClick={saveDataOnServer}  type="submit">Zgłoś zlecenie naprawy</button>
+                </fieldset>
         </div>
 
     )
