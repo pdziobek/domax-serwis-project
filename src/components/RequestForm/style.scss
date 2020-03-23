@@ -14,10 +14,6 @@
     background: transparent;
     padding: 3rem 2rem;
 
-    h2{
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
     button{
       margin-top: 1rem;
       padding: 0.5rem 1rem;
@@ -33,7 +29,7 @@
   color: white;
   padding: 5px;
   border: 1px white solid;
-  text-decoration: none
+  text-decoration: none;
 
 }
 
@@ -53,7 +49,22 @@ form{
     padding: 10px;
   }
 
+}
 
+.data-confirmation {
+  padding: 20px;
+  color: white;
 
+  legend {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+  }
 
+}
+
+.link-button {
+  color: #FFFFFF;;
+  text-decoration: none
+;
 }

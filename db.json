@@ -1,14 +1,17 @@
 {
   "orders": [
     {
-      "machine": "",
-      "location": "",
-      "reason": "",
+      "machine": "pralka",
+      "location": "NT",
+      "reason": {
+        "issue2": true,
+        "issue3": true
+      },
       "inputName": "",
       "inputAddress": "",
       "inputNumber": "",
-      "meetingTime": "",
-      "id": 2
+      "meetingTime": "afternoon",
+      "id": 22
     },
     {
       "machine": "pralka",
@@ -18,57 +21,7 @@
       "inputAddress": "",
       "inputNumber": "",
       "meetingTime": "",
-      "id": 3
-    },
-    {
-      "machine": "",
-      "location": "",
-      "reason": "",
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 4
-    },
-    {
-      "machine": "",
-      "location": "",
-      "reason": "",
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 5
-    },
-    {
-      "machine": "",
-      "location": "",
-      "reason": "",
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 6
-    },
-    {
-      "machine": "",
-      "location": "",
-      "reason": "",
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 7
-    },
-    {
-      "machine": "",
-      "location": "",
-      "reason": "",
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 8
+      "id": 23
     },
     {
       "machine": "pralka",
@@ -78,7 +31,67 @@
       "inputAddress": "",
       "inputNumber": "",
       "meetingTime": "",
-      "id": 9
+      "id": 24
+    },
+    {
+      "machine": "",
+      "location": "",
+      "reason": "",
+      "inputName": "",
+      "inputAddress": "",
+      "inputNumber": "",
+      "meetingTime": "",
+      "id": 25
+    },
+    {
+      "machine": "pralka",
+      "location": "NT",
+      "reason": {},
+      "inputName": "",
+      "inputAddress": "",
+      "inputNumber": "",
+      "meetingTime": "",
+      "id": 26
+    },
+    {
+      "machine": "",
+      "location": "",
+      "reason": "",
+      "inputName": "",
+      "inputAddress": "",
+      "inputNumber": "",
+      "meetingTime": "",
+      "id": 27
+    },
+    {
+      "machine": "",
+      "location": "",
+      "reason": "",
+      "inputName": "",
+      "inputAddress": "",
+      "inputNumber": "",
+      "meetingTime": "",
+      "id": 28
+    },
+    {
+      "machine": "",
+      "location": "",
+      "reason": "",
+      "inputName": "",
+      "inputAddress": "",
+      "inputNumber": "",
+      "meetingTime": "",
+      "id": 29
+    },
+    {
+      "machine": "",
+      "location": "",
+      "reason": "",
+      "inputName": "",
+      "inputAddress": "",
+      "inputNumber": "",
+      "meetingTime": "",
+      "id": 30
     }
   ]
 }

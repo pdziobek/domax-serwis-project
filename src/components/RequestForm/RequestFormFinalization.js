@@ -3,6 +3,8 @@ import {useHistory} from "react-router-dom";
 import Order from "../Order/Order";
 import DataConfirmation from "./DataConfirmation";
 
+import './style.scss'
+
 const RequestFormFinalization = ({order}) => {
 
     const [showConfirmation, setShowConfirmation] = useState(false);
@@ -45,11 +47,11 @@ const RequestFormFinalization = ({order}) => {
     //stworzyc komponent Order ktory dostaje w propsach order,
     return (
         <div>
-            <fieldset>
+            <fieldset className='data-confirmation'>
             <legend>Podsumowanie zgloszenia:</legend>
             <Order  order={order}/>
             <button className='next-btn' onClick={saveDataOnServer}  type="submit">Zgłoś zlecenie naprawy</button>
-                </fieldset>
+            </fieldset>
         </div>
 
     )
