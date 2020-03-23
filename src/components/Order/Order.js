@@ -36,7 +36,7 @@ const Order = (  props ) => {
             <div>Preferowany czas wizyty serwisowej: <br/> {getMeetingTime(order.meetingTime)}</div>
 
 
-            {  showDeleteBtn &&  <button className='btn-dlt-admin' onClick={() => handleDeleteOrder(order.id)}>DELETE</button> }
+            {  showDeleteBtn &&  <button className='btn-dlt-admin' onClick={() => handleDeleteOrder(order.id)}>USUŃ</button> }
         </fieldset>
     )
 };

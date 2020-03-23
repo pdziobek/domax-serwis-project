@@ -2,96 +2,61 @@
   "orders": [
     {
       "machine": "pralka",
-      "location": "NT",
+      "location": "zakopane",
+      "reason": {
+        "issue1": true,
+        "issue3": true,
+        "issue4": true,
+        "inne": true,
+        "otherReason": "wariuje"
+      },
+      "inputName": "Paulina Dziobek",
+      "inputAddress": "rybka",
+      "inputNumber": "123456",
+      "meetingTime": "",
+      "id": 1
+    },
+    {
+      "machine": "ekspres",
+      "location": "Biały Dunajec",
+      "reason": {
+        "issue3": true,
+        "issue2": true
+      },
+      "inputName": "Geowefa Niedbalska",
+      "inputAddress": "morskie oko 12/5",
+      "inputNumber": "345654321",
+      "meetingTime": "noon",
+      "id": 2
+    },
+    {
+      "machine": "mikser",
+      "location": "okolice",
       "reason": {
         "issue2": true,
-        "issue3": true
+        "inne": true,
+        "otherReason": "wydaje dźwięk, ryczy"
       },
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "afternoon",
-      "id": 22
+      "inputName": "Marian Piętka",
+      "inputAddress": "małopolna 22a",
+      "inputNumber": "9876678876",
+      "meetingTime": "evening",
+      "id": 3
     },
     {
-      "machine": "pralka",
-      "location": "NT",
-      "reason": {},
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 23
-    },
-    {
-      "machine": "pralka",
-      "location": "NT",
-      "reason": {},
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 24
-    },
-    {
-      "machine": "",
-      "location": "",
-      "reason": "",
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 25
-    },
-    {
-      "machine": "pralka",
-      "location": "NT",
-      "reason": {},
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 26
-    },
-    {
-      "machine": "",
-      "location": "",
-      "reason": "",
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 27
-    },
-    {
-      "machine": "",
-      "location": "",
-      "reason": "",
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 28
-    },
-    {
-      "machine": "",
-      "location": "",
-      "reason": "",
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 29
-    },
-    {
-      "machine": "",
-      "location": "",
-      "reason": "",
-      "inputName": "",
-      "inputAddress": "",
-      "inputNumber": "",
-      "meetingTime": "",
-      "id": 30
+      "machine": "ekspres",
+      "location": "zakopane",
+      "reason": {
+        "issue3": true,
+        "issue4": true,
+        "inne": true,
+        "otherReason": "leje sie z niego woda"
+      },
+      "inputName": "Dagmara Kusibab",
+      "inputAddress": "Kusząca 78",
+      "inputNumber": "4565434565",
+      "meetingTime": "night",
+      "id": 4
     }
   ]
 }

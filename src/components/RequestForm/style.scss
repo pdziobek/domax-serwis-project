@@ -10,7 +10,7 @@
   background: rgba( black, 0.5);
   .modal{
     width: 50%;
-    margin: 20% auto;
+    margin: 10% auto;
     background: transparent;
     padding: 3rem 2rem;
 
@@ -37,6 +37,7 @@ form{
   label, button{
     display: block;
     color: #FFFFFF;
+    padding: 5px;
   }
 
   fieldset {

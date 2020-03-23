@@ -40,29 +40,29 @@ const RequestFormMachine = ({order, setOrder}) => {
                 <fieldset>
                     <legend> Wybierz rodzaj sprzętu do naprawy </legend>
                     <label>
-                        Pralka
                         <input checked={machine === "pralka"}
                                onChange={machineOnChange} name='machine' type='radio' value='pralka'/>
+                        Pralka
                     </label>
                     <label>
-                        Zmywarka
                         <input checked={machine === "zmywarka"} onChange={machineOnChange} name='machine' type='radio'
                                value='zmywarka'/>
+                        Zmywarka
                     </label>
                     <label>
-                        Lodówka
                         <input checked={machine === "lodówka"} onChange={machineOnChange} name='machine' type='radio'
                                value='lodówka'/>
+                        Lodówka
                     </label>
                     <label>
-                        Ekspres do kawy
                         <input checked={machine === "ekspres"} onChange={machineOnChange} name='machine' type='radio'
                                value='ekspres'/>
+                        Ekspres do kawy
                     </label>
                     <label>
-                        Inne
                         <input checked={machine === "inne"} onChange={machineOnChange} name='machine' type='radio'
                                value='inne'/>
+                        Inny
                     </label>
                     {machine === 'inne' &&
                     <input value={otherMachine} onChange={otherMachineOnChange} type="text" id="text"/>}

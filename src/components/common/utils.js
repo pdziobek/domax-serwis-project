@@ -56,5 +56,5 @@ export const getMeetingTime = ( time ) => {
             return "Noc: od 20:00 do 23:00 - usługa premium"
         }
     }
-    return 'jutro'
+    return 'Rano: od 8:00 do 11:00'
 };

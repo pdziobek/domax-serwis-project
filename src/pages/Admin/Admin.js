@@ -14,7 +14,7 @@ const Admin = () => {
         fetch('http://localhost:4000/orders')
             .then((res) => res.json())
             .then(res => {setOrders(res); setIsLoading(false) })
-    }
+    };
 
     useEffect(() => {
         fetchAllOrders()
@@ -31,7 +31,7 @@ const Admin = () => {
 
 
     if(isLoading){
-      return 'Loading...'
+        return 'Loading...'
     }
 
     if(!orders.length ){
