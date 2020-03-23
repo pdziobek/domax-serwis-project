@@ -1,22 +1,6 @@
 {
   "orders": [
     {
-      "machine": "pralka",
-      "location": "zakopane",
-      "reason": {
-        "issue1": true,
-        "issue3": true,
-        "issue4": true,
-        "inne": true,
-        "otherReason": "wariuje"
-      },
-      "inputName": "Paulina Dziobek",
-      "inputAddress": "rybka",
-      "inputNumber": "123456",
-      "meetingTime": "",
-      "id": 1
-    },
-    {
       "machine": "ekspres",
       "location": "Biały Dunajec",
       "reason": {
@@ -57,6 +41,40 @@
       "inputNumber": "4565434565",
       "meetingTime": "night",
       "id": 4
+    },
+    {
+      "machine": "zmywarka",
+      "location": "Warszawa",
+      "reason": {
+        "issue2": true,
+        "inne": true,
+        "otherReason": "dymi"
+      },
+      "inputName": "Paweł Kupczuk",
+      "inputAddress": "Niewielka 20",
+      "inputNumber": "12345654321",
+      "meetingTime": "night",
+      "id": 5
+    },
+    {
+      "machine": "pralka",
+      "location": "NT",
+      "reason": {},
+      "inputName": "",
+      "inputAddress": "",
+      "inputNumber": "",
+      "meetingTime": "",
+      "id": 6
+    },
+    {
+      "machine": "pralka",
+      "location": "NT",
+      "reason": {},
+      "inputName": "",
+      "inputAddress": "",
+      "inputNumber": "",
+      "meetingTime": "",
+      "id": 7
     }
   ]
 }
