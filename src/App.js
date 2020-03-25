@@ -11,7 +11,6 @@ import './images/logowhite.png';
 import './App.css';
 import Home from './pages/Home';
 import AboutUs from "./pages/AboutUs/AboutUs";
-import OurWork from "./pages/OurWork/OurWork";
 import Prices from "./pages/Prices/Prices";
 import RepairVisit from "./pages/RepairVisit/RepairVisit";
 import Navbar from "./components/Navbar/Navbar";
@@ -31,7 +30,6 @@ function App() {
                 <Switch>
                       <Route exact path='/' component={Home} />
                       <Route exact path="/aboutus" component={AboutUs}/>
-                      <Route exact path='/ourwork' component={OurWork} />
                       <Route exact path='/prices' component={Prices} />
                       <Route path='/repairvisit/:step' component={RepairVisit} />
                       <Route path='/admin' component={Admin}/>
