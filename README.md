@@ -57,22 +57,31 @@ oraz  niestandardowymi szerzej opisanymi poniżej:
 ### FORMULARZ src/pages/RepairVisit/RepairVisit.js
 zaczepiony div o id="modal-root" z pliku html znajdującego się w: public/index.html
 
-Komponent RepairVisit zwraca funkcję createPortal() która tworzy Portal exists outside the DOM hierarchy of the parent component. (umożliwia nam przeniesienie elementów strony w miejsce bardzo odległe od komponentu - rodzica, będące poza jego hierarchią, a jednocześnie zachowuje się jak jego komponent - dziecko)
+W folderze RepairVisit komponent Modal zwraca funkcję createPortal() która tworzy(renderuje?) Portal exists outside the DOM hierarchy of the parent component. (umożliwia nam przeniesienie elementów strony w miejsce bardzo odległe od komponentu - rodzica, będące poza jego hierarchią, a jednocześnie zachowuje się jak jego komponent - dziecko)
 
 Tak powstaje modal z formularzem - element strony wyświetlony ponad wszystkim zaimportowany pakiet ReactDOM, gdzie znajduje się funkcjonalność tworzenia portali.
 
-###NEED HELP TO UNDERSTAND WHAT HAPPENED IN MODAL COMPONENT
 
+#### KROKI
 Komponent RepairVisit zwraca funkcję wbudowaną createPortal() która tworzy Portal.
 Tak powstaje modal z formularzem - element strony wyświetlony ponad wszystkim.
 w komponencie modal:
 1.  jest tworzony div
-2.  tworzymy zmienna step która zawiera funkcje useParams??
+2. pobieramy wartość step z routera a dokładnie z adresu url
+service/5 pobierze wartość 5 dla ścieżki w routerze path="service/:step"
 3.  ustawiamy stan komponentu i 7 stanów - czyli wyświetlanie kolejnych okienek formularza??
 4. używamy hooka useEffect który jako ostatnie dziecko dla zlapanego elementu z klasą modal-root tworzy diva...? i zwraca go. Ten [step] na koncu nie wiem co robi, powoduje ze funkcja wykona sie tylko raz?
 5. Potem zwraca funkcje wbudowaną i tu juz zwariowalam. Która ustawia stan aktualizując stan orderu zapisywanego w json serwerze?
 
-To tak jak ja to rozumiem mniej wiecej nie do konca i nie wiem czy dobrze. Help pls :)
+### src/components/RequestForm/RequestForm.js
+1. wszystkie wymienione komponenty dostają dostęp do propsów??
+2.optimizeStep - powoduje ze kazdy inny wpisany numer przeniesie do jakiegos stepu?
+3. ustawienie stanu...?
+4. use History ? co robi? zapisuje w serwerze stan formularza? jak?
+5. history.push 
+stoppropagation - dzieki temu onClick traci wlasciwosci?
+
+
 
 
 
