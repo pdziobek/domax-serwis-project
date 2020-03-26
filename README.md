@@ -1,7 +1,7 @@
 ## Table of contents
 * [General info](#domax-serwis-project)
 * [Technologies](#technologies)
-* [Setup](#setup)
+* [How to run the project](#how-to-run-the-project)
 
 
 
@@ -12,6 +12,40 @@ Created with JavaScript, React, Sass, Webpack and json-server.
 ### PROJECT PURPOSE
 This project was created for the purpose of completing a course 
 Javascript with React library at CodersLab Programming School.
+
+### HOW TO RUN THE PROJECT
+* please be sure that you already have installed node.js and git.
+* to run this project , install it locally using npm:
+```
+$ cd ../domax-serwis-project
+$ npm install
+$ npm start
+```
+* open second terminal
+* install json server:
+```
+$ npm install -g json-server 
+$ json-server -p 4000 db.json
+```
+* if in the terminal you will see:
+`Type s + enter at any time to create a snapshot of the database`
+please type s + enter to load database
+* now in your browser you can see fully configured App.
+
+
+
+Jak odpalic apke:
+Upewnij się że masz zainstalowanego Gita i Node.js
+npm install w folderze projektu
+npm start
+otworz druga konsole:
+zainstaluj json serwer:
+npm install -g json-server
+po instalacji wpisz w konsole:
+json-server -p 4000 db.json
+jeśli w konsoli wyswietli sie Type s + enter at any time to create a snapshot of the database
+nacisnij s+ enter 
+
 ### INTRODUCTION
 Who never had broken Household item, be the first to throw a stone... :)<br>
 <br>
@@ -80,6 +114,7 @@ service/5 pobierze wartość 5 dla ścieżki w routerze path="service/:step"
 4. use History ? co robi? zapisuje w serwerze stan formularza? jak?
 5. history.push 
 stoppropagation - dzieki temu onClick traci wlasciwosci?
+
 
 
 
