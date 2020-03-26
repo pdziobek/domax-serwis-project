@@ -75,4 +75,15 @@ w komponencie modal:
 To tak jak ja to rozumiem mniej wiecej nie do konca i nie wiem czy dobrze. Help pls :)
 
 
+Jak odpalic apke:
+Upewnij się że masz zainstalowanego Gita i Node.js
+npm install w folderze projektu
+npm start
+otworz druga konsole:
+zainstaluj json serwer:
+npm install -g json-server
+po instalacji wpisz w konsole:
+json-server -p 4000 db.json
+jeśli w konsoli wyswietli sie Type s + enter at any time to create a snapshot of the database
+nacisnij s+ enter 
 
