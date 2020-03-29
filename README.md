@@ -1,4 +1,4 @@
-## Table of contents
+## Table of Contents
 * [General info](#domax-serwis-project)
 * [Technologies](#technologies)
 * [How to run the project](#how-to-run-the-project)
